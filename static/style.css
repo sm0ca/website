@@ -1,0 +1,83 @@
+@font-face {
+    font-family: 'Iosevka Web';
+    font-display: swap;
+    font-weight: 100;
+    font-stretch: normal;
+    font-style: normal;
+    src: url('woff2/iosevka-thin.woff2') format('woff2'), url('ttf/iosevka-thin.ttf') format('truetype');
+}
+
+html {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    background: url(backdrop.jpg) no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Iosevka Web', monospace, sans-serif;
+    color: white;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.nav {
+    list-style: none;
+	position: fixed;
+	width: 100%;
+    margin: 0;
+    padding: 0;
+	z-index: 10;
+    text-align: right;
+    /* THE LINE ABOVE THIS IS THE ALIGNMENT */
+}
+
+.nav li {
+    display: inline-block;
+}
+
+.nav a {
+    display: inline-block;
+    color: white;
+    padding: 16px 16px;
+	text-decoration: none;
+    font-weight: bold;
+}
+
+.nav a:hover {
+    opacity: 0.5;
+}
+
+#name {
+    height: 100%;
+    width: 100%;
+    font-size: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 100%;
+    animation: fadein 4.5s;
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+#particles-js canvas {
+    display: block;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: -10;
+    top: 0;
+    left: 0;
+    animation: fadein 4.5s;
+}
