@@ -210,7 +210,7 @@ var pJS = function(tag_id, params){
           pJS.canvas.el.height = pJS.canvas.h;
 
           /* repaint canvas on anim disabled */
-          if(!pJS.particles.move.enable){
+          if(pJS.particles.move.enable){
             pJS.fn.particlesEmpty();
             pJS.fn.particlesCreate();
             pJS.fn.particlesDraw();
