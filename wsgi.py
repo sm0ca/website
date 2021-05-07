@@ -1,3 +1,3 @@
-from project import app
+from website import app
 if __name__ == "main":
 	app.run()
